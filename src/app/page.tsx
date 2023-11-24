@@ -7,25 +7,26 @@ import { useEffect, lazy } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 
-import bg from "public/assets/bg.webp";
-import bgResponsive from "public/assets/bgResponsive.webp";
-import img9 from "public/assets/img9.webp";
+import bg from "public/assets/bg.jpg";
+import bgResponsive from "public/assets/bgResponsive.jpg";
+import img9 from "public/assets/img9.jpg";
 import img14 from "public/assets/img14.webp";
 import img15 from "public/assets/img15.webp";
 import img20 from "public/assets/img20.webp";
-import img21 from "public/assets/img21.webp";
+import img21 from "public/assets/img21.jpg";
 // import img22 from "public/assets/img22.webp";
-import img23 from "public/assets/img23.webp";
-import img25 from "public/assets/img25.webp";
+import img23 from "public/assets/img23.jpg";
+import img25 from "public/assets/img25.jpg";
 import img26 from "public/assets/img26.webp";
-import img28 from "public/assets/img28.webp";
-import img29 from "public/assets/img29.webp";
+import img28 from "public/assets/img28.jpg";
+import img29 from "public/assets/img29.jpg";
 import img30 from "public/assets/img30.png";
-import img31 from "public/assets/img31.webp";
+import img31 from "public/assets/img31.jpg";
 import img32 from "public/assets/img32.webp";
 import img34 from "public/assets/img34.jpg";
-import img35 from "public/assets/img35.webp";
-import img36 from "public/assets/img36.webp";
+import img35 from "public/assets/img35.jpg";
+import img36 from "public/assets/img36.jpg";
+import img41 from "public/assets/img41.jpg";
 // import img37 from "public/assets/img37.webp";
 // import img38 from "public/assets/img38.webp";
 // import img39 from "public/assets/img39.webp";
@@ -57,320 +58,161 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center">
         <div className="relative w-full flex flex-col overflow-hidden">
           <Image
-            className="md:w-full md:h-screen object-cover brightness-50 sm:h-[20rem] hidden md:block"
+            className="md:w-full md:h-screen object-cover brightness-50 sm:h-[20rem] hidden xl:block"
             src={bg}
             alt="foto do studio alessandra pavani"
             decoding="async"
+            width={0}
+            height={0}
             priority  
+            sizes="100vw"
           />
           <Image
-            className="md:w-full md:h-screen object-cover brightness-50 sm:h-[20rem] block md:hidden"
+            className="md:w-full md:h-screen object-cover brightness-50 sm:h-[20rem] block xl:hidden"
             src={bgResponsive}
             alt="foto do studio alessandra pavani"
             decoding="async"
             priority
           />
         </div>
-        <div className="bg-black w-full h-[32rem] md:hidden"></div>
+        <div className="bg-black w-full h-[32rem] lg:hidden"></div>
         <div
-          data-aos="fade-left"
-          data-aos-duration="650"
-          className="absolute top-[18rem] md:top-[12rem] 3xl:top-[10rem] md:mb-[6rem] flex flex-col 3xl:max-w-5xl items-center justify-center"
+          className="absolute top-[18rem] md:top-[58rem] xl:top-[10rem] md:mb-[6rem] flex flex-col 3xl:max-w-5xl items-center justify-center xl:ml-96"
         >
-          <h1 className="text-center text-white text-3xl md:text-6xl 3xl:text-7xl font-semibold bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
-            Método Alessandra <br /> Pavani
+          <h1 className="text-center text-white text-2xl md:text-6xl 3xl:text-7xl font-semibold mb-6">
+          O <span className="text-amber-500 uppercase">segredo</span> da finalização <br /> Perfeita!
           </h1>
-          <h2 className="3xl:text-3xl text-xl md:text-3xl md:font-semibold mt-3 text-white leading-tight sm:px-4 text-center">
-            Seja um{" "}
-            <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
-              cabeleireiro referência
-            </span>{" "}
-            em curvaturas aonde
-            <br /> somos 70% da população Brasileira cabelos cacheados e crespo,
-            <br />            aumentando o seu{" "}
-            <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
-              faturamento mensal
+          <h2 className="3xl:text-3xl text-xl md:text-3xl md:font-semibold mt-3 text-white leading-tight sm:px-4 text-center mb-6">
+            Seja a próxima profissional{" "}
+            <span className="text-amber-500 uppercase">
+            especialista{" "}  
             </span>
-            .
+            em <br /> 
+            <span className="text-amber-500 uppercase">
+            finalização{" "}
+            </span>
+            em cabelos {" "}
+            <span className="text-amber-500 uppercase">
+            crespo, cacheados e afro!
+            </span>
           </h2>
-          <p className="mt-4 mb-8 md:text-lg text-gray-300 sm:max-w-md md:max-w-2xl mx-auto sm:px-8 text-center">
-            Proporcionando resultado incríveis para suas clientes!
+          <p className="xl:w-2/5 3xl:text-3xl text-xl md:text-3xl md:font-semibold mt-3 text-white leading-tight sm:px-4 text-center mb-12">
+            <span className="text-amber-500 uppercase">
+            Venha dominar as técnicas{" "}
+            </span>
+            do Método Alessandra Pavani, em cabelos com diferentes
+            texturas e curvaturas{" "}
+            <span className="text-amber-500 uppercase">
+            proporcionando mais volume <span className="text-white">ou</span> menos 
+            </span>
+            , deixando com definição
+            e movimento, tornando as clientes{" "}
+            <span className="text-amber-500 uppercase">
+            fiéis e fãs do seu trabalho!
+            </span>
           </p>
-          <iframe
-            className=" mb-8 rounded-lg md:h-[15rem] md:w-[30rem] 3xl:h-[20rem] 3xl:w-[32rem]"
-            src="https://www.youtube.com/embed/z4vxqN-Kw6w"
-          ></iframe>
-          <a href="https://pay.hotmart.com/S83235822U?off=dysrtym2" target="blank">
+          <a href="https://pay.hotmart.com/J88592474N?off=v33yu41h" target="blank">
             <button className="ease-in-out duration-300 hover:bg-neutral-900 hover:text-slate-50 mt-4 md:mt-0 3xl:mt-4 mx-auto md:w-[42rem] flex justify-center px-16 py-3 bg-slate-50 font-semibold text-xl md:text-2xl rounded transition-colors cursor-pointer shadow-lg">
-              Inscreva-se agora
+              Compre Agora!
             </button>
           </a>
         </div>
       </div>
       <div className="bg-gradient-to-b from-black to-[#2d1a10] w-full flex flex-col justify-center h-full pb-20 px-8 md:px-0">
         <h1
-          data-aos="fade-left"
-          data-aos-duration="650"
-          className="text-neutral-200 text-4xl md:text-5xl font-bold leading-[3rem] pt-32 pb-2 md:pb-6 text-center"
+          className="text-neutral-200 text-2xl md:text-4xl font-bold md:leading-[3rem] md:w-2/3 self-center pt-32 pb-6 md:pb-10 text-center"
         >
-          Comece a faturar com o{" "}
-          <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
-            M.A.P
+          Você vai dominar as técnicas de finalização em cabelos ondulados, cacheados, crespo e afro 
+          entregando o
+          <span className="text-amber-500 uppercase">
+          {" "} melhor resultado para sua cliente,
           </span>
+          {" "} e ainda tendo o seu day after por vários dias.
         </h1>
-        <p
-          data-aos="fade-right"
-          data-aos-duration="650"
-          className="text-2xl md:text-3xl text-neutral-300 pb-14 md:pb-10 text-center"
-        >
-          Aulas teóricas e práticas com modelos
-          <br /> para elevar a sua especialização em curvaturas.
-        </p>
         <div className="flex w-fit items-center justify-center flex-col md:flex-row px-4 mx-auto gap-6">
           <div
-            data-aos="fade-bottom"
-            data-aos-duration="1000"
             className="flex flex-wrap max-w-5xl items-center justify-center gap-6"
           >
-            <Modulos title="materiais para corte e finalização" img={img35} text="MÓDULO">
+            <Modulos title="Finalização Cabelo Crespo Curto" img={img35} text="MÓDULO">
               <p className="font-bold">
-                - Aula 1. <span className="font-normal">Materiais para começar a trabalhar;</span>
+                - Aula 1. <span className="font-normal">Finalização;</span>
               </p>
               <p className="font-bold">
-                - Aula 2. <span className="font-normal">Shampoo;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 3. <span className="font-normal"> Máscara, óleos e acidificação;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 4. <span className="font-normal">finalizadores;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 5. <span className="font-normal">Aula Extra: Como segurar a tesoura corretamente;</span>
+                - Aula 2. <span className="font-normal">Secagem;</span>
               </p>
             </Modulos>
 
-            <Modulos title="Transição capilar." img={img28} text="MÓDULO">
+            <Modulos title="Finalização Cabelo Cacheado Médio Long Bob" img={img28} text="MÓDULO">
               <p className="font-bold">
-                - Aula 1.{" "}
-                <span className="font-normal">
-                  Apresentação da Transição Capilar;
-                </span>
+                - Aula 1. <span className="font-normal">Finalização;</span>
               </p>
               <p className="font-bold">
-                - Aula 2.{" "}
-                <span className="font-normal">
-                  Transição Capialar aula teórica;
-                </span>
+                - Aula 2. <span className="font-normal">Secagem e ajuste;</span>
               </p>
               <p className="font-bold">
-                - Aula 3.{" "}
-                <span className="font-normal">
-                  Entrevista com a Maria Fernanda;
-                </span>
-              </p>
-              <p className="font-bold">
-                +{" "}
-                <span className="font-normal">
-                  Apostila com as técnicas de corte a seco com ângulos e linhas
-                  e projeção;
-                </span>
+                - Aula 3. <span className="font-normal">Antes e depois;</span>
               </p>
             </Modulos>
 
-            <Modulos title="Big Chop" img={img25} text="MÓDULO">
+            <Modulos title="Finalização Cabelo Afro Coração" img={img21} text="MÓDULO">
               <p className="font-bold">
-                - Aula 1. <span className="font-normal">Avaliação;</span>
+                - Aula 1. <span className="font-normal">Finalização;</span>
               </p>
               <p className="font-bold">
-                - Aula 2.{" "}
-                <span className="font-normal">Corte a seco linhas pt-1;</span>
+                - Aula 2. <span className="font-normal">Difusor;</span>
               </p>
               <p className="font-bold">
-                - Aula 3.{" "}
-                <span className="font-normal">
-                  Corte a seco Ângulos e Projeções pt-2;
-                </span>
-              </p>
-              <p className="font-bold">
-                - Aula 4.{" "}
-                <span className="font-normal">
-                  Higiênização e Acidificação;
-                </span>
-              </p>
-              <p className="font-bold">
-                - Aula 5.{" "}
-                <span className="font-normal">
-                  Tratamento e Reposição de lipídios;
-                </span>
-              </p>
-              <p className="font-bold">
-                - Aula 6.{" "}
-                <span className="font-normal">Finalização Conceitual;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 7. <span className="font-normal">Secagem;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 8. <span className="font-normal">Depoimento;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 9. <span className="font-normal">Antes e Depois;</span>
+                - Aula 3. <span className="font-normal">Antes e depois;</span>
               </p>
             </Modulos>
 
-            <Modulos title="Long Bob" img={img23} text="MÓDULO">
+            <Modulos title="Finalização Cabelo Cacheado Longo Camadas Altas" img={img29} text="MÓDULO">
               <p className="font-bold">
-                - Aula 1.{" "}
-                <span className="font-normal">
-                  Avaliação curvatura 3-A, 3-B, 3-C;
-                </span>
+                - Aula 1. <span className="font-normal">Finalização;</span>
               </p>
               <p className="font-bold">
-                - Aula 2.{" "}
-                <span className="font-normal">
-                  Corte a Seco linhas e ângulos;
-                </span>
-              </p>
-              <p className="font-bold">
-                - Aula 3.{" "}
-                <span className="font-normal">
-                  Higiênização e Acidificação;
-                </span>
-              </p>
-              <p className="font-bold">
-                - Aula 4.{" "}
-                <span className="font-normal">Tratamento e Nutrição;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 5. <span className="font-normal">Secagem;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 6.{" "}
-                <span className="font-normal">
-                  Finalização e Ajuste do corte;
-                </span>
-              </p>
-              <p className="font-bold">
-                - Aula 7. <span className="font-normal">Antes e Depois;</span>
+                - Aula 2. <span className="font-normal">Ajuste é resultado final;</span>
               </p>
             </Modulos>
 
-            <Modulos title="Corte em camadas altas" img={img21} text="MÓDULO">
+            <Modulos title="Finalização Cabelo Médio Crespo Camadas Altas " img={img31} text="MÓDULO">
               <p className="font-bold">
-                - Aula 1. <span className="font-normal">Introdução;</span>
+                - Aula 1. <span className="font-normal">Finalização;</span>
               </p>
               <p className="font-bold">
-                - Aula 2. <span className="font-normal">Avaliação;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 3. <span className="font-normal">Corte a Seco;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 4.{" "}
-                <span className="font-normal">
-                  Pré Tratamento com Manteiga;
-                </span>
-              </p>
-              <p className="font-bold">
-                - Aula 5.{" "}
-                <span className="font-normal">Higienização e Tratamento;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 6.{" "}
-                <span className="font-normal">Finalização Conceitual;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 7. <span className="font-normal">Difusor, Secagem;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 8. <span className="font-normal">Ajuste do Corte;</span>
+                - Aula 2. <span className="font-normal">Resultado final;</span>
               </p>
             </Modulos>
 
             <Modulos
-              title="corte coração em cabelos afro"
-              img={img31}
+              title="Finalização Cabelo Crespo Black Power Volumão"
+              img={img25}
               text="MÓDULO"
             >
               <p className="font-bold">
-                - Aula 1. <span className="font-normal">Introdução;</span>
+                - Aula 1. <span className="font-normal">Finalização;</span>
               </p>
               <p className="font-bold">
-                - Aula 2. <span className="font-normal">Avaliação;</span>
+                - Aula 2. <span className="font-normal">Secagem;</span>
               </p>
               <p className="font-bold">
-                - Aula 3. <span className="font-normal">Corte a Seco;</span>
+                - Aula 3. <span className="font-normal">Dica de Volume;</span>
               </p>
               <p className="font-bold">
-                - Aula 4.{" "}
-                <span className="font-normal">
-                  Avaliação do Pré Tratamento;
-                </span>
-              </p>
-              <p className="font-bold">
-                - Aula 5.{" "}
-                <span className="font-normal">
-                  Aplicação do Pré Tratamento com Óleo essencial 100% natural;
-                </span>
-              </p>
-              <p className="font-bold">
-                - Aula 6.{" "}
-                <span className="font-normal">Higienização e Tratamento;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 7.{" "}
-                <span className="font-normal">Finalização Conceitual;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 8.{" "}
-                <span className="font-normal">
-                  Ajuste do Corte e Resultado Final;
-                </span>
+                - Aula 4. <span className="font-normal">Resultado Final;</span>
               </p>
             </Modulos>
 
-            <Modulos title="corte em camadas médias" img={img29} text="MÓDULO">
+            <Modulos title="Finalização Cabelo Ondulado Assimétrico" img={img41} text="MÓDULO">
               <p className="font-bold">
-                - Aula 1. <span className="font-normal">Introdução;</span>
+                - Aula 1. <span className="font-normal">Finalização;</span>
               </p>
               <p className="font-bold">
-                - Aula 2. <span className="font-normal">Avaliação;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 3. <span className="font-normal">Corte a Seco;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 4.{" "}
-                <span className="font-normal">
-                  Pré Tratamento com Manteiga e Tratamento;
-                </span>
-              </p>
-              <p className="font-bold">
-                - Aula 5.{" "}
-                <span className="font-normal">Finalização Conceitual;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 6. <span className="font-normal">Resultado Final;</span>
+                - Aula 2. <span className="font-normal">Resultado Final;</span>
               </p>
             </Modulos>
 
-            <Modulos title="Terapia Capilar" img={img36} text="MÓDULO">
-              <p className="font-bold">
-                - Aula 1. <span className="font-normal">Apresentação;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 2. <span className="font-normal">Ciclo de crescimento e tricologia;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 3. <span className="font-normal">Alopecias e Tratamentos;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 4.{" "}
-                <span className="font-normal">
-                Tipos de Cabelos e Curvaturas;
-                </span>
-              </p>
+            <Modulos title="Finalização Cabelo Crespo Camadas Altas, com Franja, com volume e sem volume." img={img36} text="MÓDULO">
             </Modulos>
           </div>
         </div>
@@ -386,111 +228,80 @@ export default function Home() {
           data-aos-duration="650"
           className="flex flex-col justify-center items-center pt-10 pb-16 gap-8"
         >
-          <h3 className="text-3xl text-slate-100 uppercase -mb-4 font-bold">
-            Bônus
-          </h3>
-          <div className="px-6 md:px-[28rem] space-y-6 text-xl md:text-3xl md:font-medium text-slate-200 text-center">
-            <p>
-              <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
-                Acesso excluvivo{" "}
-              </span>
-              a mentorias ao vivo garantindo sua vaga!
+          <div className="px-6 lg:w-2/4 space-y-6 text-xl md:text-3xl md:font-medium text-slate-200 text-center">
+            <p> 
+            Você vai <span className="text-amber-500 uppercase">ganhar um bônus completo</span> de corte molhado em cabelos crespos, passo a passo com a <span className="text-amber-500 uppercase">Método Alessandra Pavani.</span>  
             </p>
+            <p>Tornado suas fieis com o seu trabalho.</p>
             <p>
-              Acesse ao Método por{" "}
-              <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
-                2 anos{" "}
-              </span>
-              E ainda recebendo atualizações com
-              <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
+            Você vai aumentar o seu faturamento de 
+              <span className="text-amber-500 uppercase">
                 {" "}
-                módulos novos e técnicas exclusivas{" "}
-              </span>
-              por um ano. Sem pagar mais nada por isso.
-            </p>
-            <p>
-              <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
-                Mentoria vip exclusiva{" "}
-              </span>
-              para os primeiros alunos adquirir o {" "}
-              <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
-                M.A.P Transformation
+                2 a 3 mil reais mensal.{" "}
               </span>
             </p>
           </div>
           <div className="flex md:flex-row flex-col gap-4">
-            <LazyBonus title="Intrevistando a Cliente" img={img26} text="BÔNUS" person="@alessandrapavani">
+            <LazyBonus title="Corte em Cabelo Crespo Molhado em Camadas Altas com franja" img={img36} text="BÔNUS" person="@alessandrapavani">
               <p className="font-bold">
                 - Aula 1.{" "}
                 <span className="font-normal">
-                  avaliação com a cliente na transição capilar
+                  Introdução
                 </span>
               </p>
-              <p className="font-normal">
-                - Material exclusivo ficha de anamnese criado pela Alessandra
-                Pavani, vendo a necessidade de cada cliente
-              </p>
-              <p className="font-normal">
-                - Com essa informações você monta o protocolo personalizada
-              </p>
-            </LazyBonus>
-            <LazyBonus title="Benefícios" img={img34} text="BÔNUS" person="@alessandrapavani">
-              <p className="font-normal">
-                - Aulas atualizadas dentro de 1 ano;
-              </p>
-              <p className="font-normal">- Acesso por 2 anos;</p>
-              <p className="font-normal">
-                - Sem nenhum custo adicional por isso, para aumentar ainda mais
-                o seu conhecimento nas técnicas;
-              </p>
-              <p className="font-normal">
-                - Mentoria vip os 5 primeiros alunos;
-              </p>
-              <p className="font-normal">- Grupo de tira dúvida network;</p>
-              <p className="font-normal">
-                - R$ 2153,00 de desconto saindo por apenas R$1197 á vista;
-              </p>
-            </LazyBonus>
-            <LazyBonus title="Corte a seco anos 70 Black Power" img={img40} text="BÔNUS" person="@studioalessandrapavani">
-            <p className="font-bold">
-                - Aula 1. <span className="font-normal">Tabela de curvatura 1A ao 5C;</span>
+              <p className="font-bold">
+                - Aula 2.{" "}
+                <span className="font-normal">
+                  Higienização + Acidificação
+                </span>
               </p>
               <p className="font-bold">
-                - Aula 2. <span className="font-normal">Tabela de curvatura 5;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 3. <span className="font-normal">Corte a seco curvatura 4C e 5A;</span>
+                - Aula 3.{" "}
+                <span className="font-normal">
+                  Nutrição
+                </span>
               </p>
               <p className="font-bold">
                 - Aula 4.{" "}
                 <span className="font-normal">
-                Tira dúvidas;
+                  Corte
                 </span>
               </p>
               <p className="font-bold">
                 - Aula 5.{" "}
-                <span className="font-normal">Higienização e Hidratação;</span>
+                <span className="font-normal">
+                 Finalização
+                </span>
               </p>
               <p className="font-bold">
-                - Aula 6. <span className="font-normal">Ajuste do Corte;</span>
+                - Aula 6.{" "}
+                <span className="font-normal">
+                 Difusor
+                </span>
               </p>
               <p className="font-bold">
-                - Aula 7. <span className="font-normal">Finalização;</span>
+                - Aula 7.{" "}
+                <span className="font-normal">
+                 Finalização
+                </span>
               </p>
               <p className="font-bold">
-                - Aula 8. <span className="font-normal">Secagem;</span>
+                - Aula 8.{" "}
+                <span className="font-normal">
+                 Volume
+                </span>
               </p>
               <p className="font-bold">
-                - Aula 9. <span className="font-normal">Dica de volume Black Pawer;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 10. <span className="font-normal">Antes e Depois;</span>
+                - Aula 9.{" "}
+                <span className="font-normal">
+                 Brilho + Resultado
+                </span>
               </p>
             </LazyBonus>
           </div>
-          <a href="https://pay.hotmart.com/S83235822U?off=dysrtym2" target="blank">
+          <a href="https://pay.hotmart.com/J88592474N?off=v33yu41h" target="blank">
             <button className="ease-in-out duration-300 hover:bg-neutral-900 hover:text-slate-50 mt-4 md:mt-0 3xl:mt-4 mx-auto md:w-[42rem] flex justify-center px-16 py-3 bg-slate-50 font-semibold text-xl md:text-2xl rounded transition-colors cursor-pointer shadow-lg">
-              Inscreva-se agora
+              Sim eu quero 
             </button>
           </a>
         </div>
@@ -498,7 +309,7 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center relative">
         <div className="w-full relative">
           <Image
-            className="w-full h-[55rem] object-cover object-top brightness-[0.3]"
+            className="w-full h-[55rem] object-cover object-top brightness-75"
             src={img9}
             alt="foto do studio alessandra pavani"
             decoding="async"
@@ -514,20 +325,27 @@ export default function Home() {
             data-aos-duration="650"
             className="flex flex-col items-center max-w-5xl px-4 w-fit md:w-full"
           >
-            <h1 className="text-center text-neutral-900 text-4xl md:text-6xl font-bold w-full px-12 md:px-0 h-fit py-4 bg-gradient-to-r from-orange-300 to-yellow-700/90">
-              Prática de Corte
+            <h1 className="text-center text-neutral-900 text-4xl md:text-6xl font-bold w-2/4 md:w-full px-12 md:px-2 h-fit py-4 bg-gradient-to-r from-orange-300 to-yellow-700/90">
+              Esses são os resultados que você irá aprender
             </h1>
             <h2 className="text-2xl md:text-3xl mt-6 px-[20rem] text-white leading-tight md:px-4 text-center">
-              Com aulas gravadas fica mais fácil de entender, são 6 cortes
-              diferentes em modelos. Nada de boneca! Aumentando seu Faturamento
+            ✔ Sem química totalmente natural
             </h2>
-            <p className="text-2xl md:text-3xl mt-6 text-white px-[20rem] leading-tight md:px-8 text-center">
-              Cacheado, crespo, afro, long bob, pixie, camadas altas e médias e
-              como fazer um bigchop depois da transição capilar.
-            </p>
-            <p className="text-2xl font-semibold md:text-3xl mt-6 text-white px-[20rem] leading-tight md:px-4 text-center">
-              Confira abaixo os cortes que você irá aprender:
-            </p>
+            <h2 className="text-2xl md:text-3xl mt-6 px-[20rem] text-white leading-tight md:px-4 text-center">
+            ✔ Com produtos assertivos 
+            </h2>
+            <h2 className="text-2xl md:text-3xl mt-6 px-[20rem] text-white leading-tight md:px-4 text-center">
+            ✔ Muita definição 
+            </h2>
+            <h2 className="text-2xl md:text-3xl mt-6 px-[20rem] text-white leading-tight md:px-4 text-center">
+            ✔ Muito volume 
+            </h2>
+            <h2 className="text-2xl md:text-3xl mt-6 px-[20rem] text-white leading-tight md:px-4 text-center">
+            ✔ Ou pouco volume
+            </h2>
+            <h2 className="text-2xl md:text-3xl mt-6 px-[20rem] text-white leading-tight md:px-4 text-center">
+            ✔ Cachos com movimento
+            </h2>
           </div>
           <div className="flex mt-12">
             <Swiper
@@ -622,35 +440,31 @@ export default function Home() {
         >
           <h1 className="text-3xl text-slate-100 mb-2">
             QUEM É{" "}
-            <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
+            <span className="text-amber-500 uppercase">
               Alessandra Pavani
             </span>
           </h1>
-          <q className="text-slate-100 text-2xl">
-            Tudo posso naquele que me fortalece.{" "}
-          </q>
           <p className="text-md font-medium text-slate-200 mt-7">
-            Eu sou Alessandra Pavani atuo na área da beleza a 14 anos. Me
+            Atuante na área da beleza a 14 anos. Me
             especializei em cachos há 6 anos atrás quando passei pela minha
-            transição capilar, interna e profissional. Desenvolvi técnicas de
+            transição capilar, interna e profissional. Desenvolvi um método e técnicas de
             protocolo de atendimento humanizado e bem estar, técnicas avançadas
-            de corte tratamento e finalização para fidelização dos clientes novos
-            todos os dias.
+            de corte tratamento e finalização para fidelização de novos clientes.
           </p>
           <p className="text-md font-medium text-slate-200 mt-3">
-            Hoje sou educadora na área dos cachos, ganhadora de dois prêmios em
+            Hoje sou educadora na área de cabelos com curvatura do ondulado ao afro, ganhadora de dois prêmios em
             São Paulo em cabelos crespos e cacheados 2022, e sendo homenageada
             entre as mulheres Empreendedoras de Sucesso pela Revista Regional em
-            2022 e 2023. Criei o M.A.P Transformation para ensinar novos
+            2022 e 2023. Criei o <span className="text-amber-500">MÉTODO ALESSANDRA PAVANI</span> para ensinar novos
             profissionais tradicionais a se tornarem referência em sua cidade á alcançarem
             um novo patamar profissional.
           </p>
-          <p className="text-md font-roboto font-semibold tracking-wide bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent uppercase md:px-20 text-center mt-6">
-            o meu método já formou vários profissonais especialistas em cachos
+          <p className="text-md font-roboto font-semibold tracking-wide text-amber-500 uppercase md:px-20 text-center my-6">
+            o meu método já formou mais de 500 profissionais especialistas em cachos!!!
           </p>
-          <a href="https://pay.hotmart.com/S83235822U?off=dysrtym2" target="blank">
+          <a href="https://pay.hotmart.com/J88592474N?off=v33yu41h" target="blank">
             <button className="ease-in-out duration-300 hover:bg-neutral-900 hover:text-slate-50 mt-4 md:mt-0 3xl:mt-4 mx-auto md:w-[42rem] flex justify-center px-16 py-3 bg-slate-50 font-semibold text-xl md:text-2xl rounded transition-colors cursor-pointer shadow-lg">
-              Inscreva-se agora
+              Compre Agora!
             </button>
           </a>
         </div>
@@ -727,12 +541,6 @@ export default function Home() {
             Ao adquirir o curso, você precisará configurar um acesso, seguindo orientações de um e-mail que chegará no endereço eletrônico cadastrado por você."
           />
           <LazyDropDown
-            question="Como funciona o acompanhamento do curso?"
-            answer="O aluno terá 6 aulas tira dúvidas, com duração média de uma hora, ao vivo, em complemento às aulas gravadas, de acordo com cronograma específico da turma. 
-            Essas aulas tira-dúvidas são restritas aos alunos matriculados e em plataforma a definir, de acordo com o critério de melhor aproveitamento dos objetivos do curso.                        
-            O objetivo destas aulas ao vivo será realizar o esclarecimento de dúvidas dos alunos, pelo professor do curso, referentes ao módulo em estudo."
-          />
-          <LazyDropDown
             question="O curso fornece certificado?"
             answer="Sim! Ao concluir 100% das aulas, você poderá gerar automaticamente o seu certificado de conclusão."
           />
@@ -757,8 +565,8 @@ export default function Home() {
         hover:bg-slate-50 font-semibold text-2xl rounded transition-colors cursor-pointer shadow-xl"
         >
           <button className="transition-all ease-in-out duration-300">
-            <a href="https://pay.hotmart.com/S83235822U?off=dysrtym2" target="blank">
-              Inscreva-se Agora
+            <a href="https://pay.hotmart.com/J88592474N?off=v33yu41h" target="blank">
+              Compre Agora!
             </a>
           </button>
         </div>

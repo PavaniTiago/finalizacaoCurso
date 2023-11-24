@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 import { HiChevronRight } from "react-icons/hi";
 
 interface ModulosProps {
     title: string;
-    img: any;
+    img: StaticImageData;
     children: React.ReactNode;
     text: string;
 }
@@ -23,7 +23,7 @@ export default function Modulos({ title, img, children, text }: ModulosProps) {
             </div>
             </div>
             <div className="py-4 md:py-6 pl-4 w-full">
-                <div className="flex items-center">
+            <div className="flex items-center">
                     <HiChevronRight
                     className={`h-6 w-6 text-neutral-200 mb-2 mr-2 transform ${isOpen ? "rotate-90" : ""}`}
                     />
