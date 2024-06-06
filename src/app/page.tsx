@@ -79,10 +79,10 @@ export default function Home() {
         <div
           className="absolute top-[18rem] md:top-[58rem] xl:top-[10rem] md:mb-[6rem] flex flex-col 3xl:max-w-5xl items-center justify-center xl:ml-96"
         >
-          <h1 className="text-center text-white text-2xl md:text-6xl 3xl:text-7xl font-semibold mb-6">
+          <h1 className="text-center text-white text-2xl md:text-5xl 3xl:text-7xl font-semibold mb-6">
           O <span className="text-amber-500 uppercase">segredo</span> da finalização <br /> Perfeita!
           </h1>
-          <h2 className="3xl:text-3xl text-xl md:text-3xl md:font-semibold mt-3 text-white leading-tight sm:px-4 text-center mb-6">
+          <h2 className="3xl:text-3xl text-xl md:text-2xl md:font-semibold mt-3 text-white leading-tight sm:px-4 text-center mb-6">
             Seja a próxima profissional{" "}
             <span className="text-amber-500 uppercase">
             especialista{" "}  
@@ -96,7 +96,7 @@ export default function Home() {
             crespo, cacheados e afro!
             </span>
           </h2>
-          <p className="xl:w-2/5 3xl:text-3xl text-xl md:text-3xl md:font-semibold mt-3 text-white leading-tight sm:px-4 text-center mb-12">
+          <p className="md:w-3/5 3xl:w-2/5 3xl:text-3xl text-xl md:text-2xl md:font-semibold mt-3 text-white leading-tight sm:px-4 text-center mb-8">
             <span className="text-amber-500 uppercase">
             Venha dominar as técnicas{" "}
             </span>

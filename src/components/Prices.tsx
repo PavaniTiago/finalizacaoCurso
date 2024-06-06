@@ -5,12 +5,11 @@ import icon from "../../public/assets/blackFriday.png"
 export default function Prices({img}: {img: any}) {
     return (
         <div className='flex flex-col items-center justify-center gap-4 px-2 max-w-xl text-neutral-100 overflow-hidden'>
-            <h2 className='text-3xl md:text-5xl font-semibold uppercase text-neutral-900 md:w-full w-[20rem] py-2.5 md:py-4 rounded-2xl text-center bg-gradient-to-r from-orange-300 to-yellow-700/90'>A oportunidade</h2>
+            <h2 className='text-3xl md:text-5xl font-semibold uppercase text-neutral-900 md:w-full w-[20rem] py-2.5 md:py-4 rounded-2xl text-center bg-gradient-to-r from-orange-300 to-yellow-700/90'>Desconto!</h2>
             <div className='flex flex-col justify-center items-center gap-2'>
-                <h2 className='text-2xl md:text-3xl uppercase font-bold px-6 md:px-8 text-center'>Hoje você terá a <span className='text-orange-300'>OPORTUNIDADE</span> de adquirir o curso completo de <del className='text-orange-300'>500,00</del></h2>
+                <h2 className='text-2xl md:text-3xl uppercase font-bold px-6 md:px-8 text-center'>Aproveite o <span className='text-orange-300'>Desconto </span>especial nas técnicas de finalização para cachos De <del className='text-orange-300'>599,00</del></h2>
                 <p className='text-3xl md:text-5xl font-bold text-orange-300'><span className='text-neutral-100'>Parcelado em</span> 10x</p>
                 <p className='text-3xl md:text-5xl font-bold text-orange-300'><span className='text-neutral-100'>de</span> R$29,79</p>
-                <Image decoding="async" src={icon} className='w-[8rem] md:w-[10rem] saturate-150' alt='black friday icon'/>
                 <p className='text-md font-semibold'>*Sem juros</p>
                 <h2 className='text-3xl md:text-4xl font-bold'>por R$297,90</h2>
                 <p className='text-md font-semibold'>*Pelo cartão de crédito</p>

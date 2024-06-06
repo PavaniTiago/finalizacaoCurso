@@ -5,7 +5,7 @@ import { HiChevronRight } from "react-icons/hi";
 interface ModulosProps {
     title: string;
     img: StaticImageData;
-    children: React.ReactNode;
+    children?: React.ReactNode;
     text: string;
 }
 
