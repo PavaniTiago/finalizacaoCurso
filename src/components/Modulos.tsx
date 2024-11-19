@@ -3,38 +3,73 @@ import { useState } from "react";
 import { HiChevronRight } from "react-icons/hi";
 
 interface ModulosProps {
-    title: string;
-    img: StaticImageData;
-    children?: React.ReactNode;
-    text: string;
+  title: string;
+  img: StaticImageData;
+  children?: React.ReactNode;
+  text: string;
 }
 
 export default function Modulos({ title, img, children, text }: ModulosProps) {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    return (
-        <div className="bg-black flex flex-col overflow-hidden rounded-2xl shadow-xl">
-            <div className="relative flex justify-center items-center">
-                <Image decoding="async" src={img} alt="foto de alessandra pavani" className="h-[22rem] w-[17.5rem] brightness-75"/>
-                <div className="from-black via-transparent to-transparent bg-gradient-to-t bottom-0 left-0 right-0 w-full h-[40rem]  absolute"></div>
-            <div className="absolute mt-32">
-                <h2 className="text-2xl text-center text-slate-100 tracking-widest mb-2">{text}</h2>
-                <p className="text-3xl tracking-tight px-1 text-center uppercase font-extrabold font-inter bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">{title}</p>
-            </div>
-            </div>
-            <div className="py-4 md:py-6 pl-4 w-full">
-            <div className="flex items-center">
-                    <HiChevronRight
-                    className={`h-6 w-6 text-neutral-200 mb-2 mr-2 transform ${isOpen ? "rotate-90" : ""}`}
-                    />
-                    <button className="font-semibold text-neutral-200 pb-2.5" onClick={() => setIsOpen(!isOpen)}><h2>SAIBA MAIS</h2></button>
-                </div>
-                {isOpen && 
-                    <div className="relative py-2 space-y-2 z-10 mt-2 w-64 rounded text-slate-100">
-                    {children}
-                  </div>
-                }
-            </div>
-        </div>
-    )
+  return (
+    <div className="relative bg-[#1E1E1E] flex flex-col overflow-hidden rounded-xl shadow-lg transition-all duration-300 group hover:shadow-2xl hover:shadow-[#FFC857]/40">
+      {/* Imagem com Gradiente */}
+    <div className="relative">
+      <Image
+        decoding="async"
+        src={img}
+        alt={`Imagem do módulo ${title}`}
+        className="h-[22rem] w-[16rem] object-cover rounded-t-xl transform group-hover:scale-105 transition-transform duration-300 hover:brightness-75 brightness-50"
+      />
+      <div className="absolute bottom-6 left-6 right-6 text-center">
+        <h2 className="text-sm text-slate-300 tracking-wide mb-2 uppercase">
+        {text}
+        </h2>
+        <p className="text-lg xl:text-2xl tracking-tight font-extrabold font-inter bg-gradient-to-r from-[#FFC857] to-[#FFAA33] bg-clip-text text-transparent uppercase">
+        {title}
+        </p>
+      </div>
+    </div>
+
+      {/* Botão e Conteúdo Expandível */}
+      <div className="py-4 px-3 w-64">
+        <button
+          className="flex items-center justify-start text-[#FFC857] font-semibold text-lg uppercase transition-colors hover:text-[#FFAA33] focus:outline-none"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <HiChevronRight
+            className={`h-6 w-6 mr-2 transform transition-transform duration-300 ${
+              isOpen ? "rotate-90" : ""
+            }`}
+          />
+          Saiba Mais
+        </button>
+        {isOpen && (
+          <div
+            className="mt-4 p-3 text-sm text-slate-200 bg-[#2A2A2A] rounded-lg shadow-inner transition-all duration-300"
+            style={{
+              animation: isOpen ? "fadeIn 0.5s ease-in-out" : "",
+            }}
+          >
+            {children}
+          </div>
+        )}
+      </div>
+
+      {/* Animação no Hover */}
+      <style jsx>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
+    </div>
+  );
 }
