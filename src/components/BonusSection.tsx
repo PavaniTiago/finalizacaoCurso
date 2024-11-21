@@ -3,27 +3,27 @@ import img36 from "public/assets/img36.jpg";
 
 export function BonusSection(){
     return (
-        <div className="bg-gradient-to-t from-[#130e0b] to-[#2d1a10] w-full">
+        <div className="bg-gradient-to-t from-[#F3ECE8] to-[#D9BBAA] w-full">
         <div
           data-aos="fade-top"
           data-aos-duration="650"
           className="flex flex-col justify-center items-center pt-10 pb-16 gap-8"
         >
-          <div className="px-6 lg:w-2/4 space-y-6 text-xl md:text-3xl md:font-medium text-slate-200 text-center">
+          <div className="px-6 lg:w-2/4 space-y-6 text-xl md:text-3xl md:font-medium text-white text-center">
             <p>
               Você vai{" "}
-              <span className="text-amber-500 uppercase">
+              <span className="text-rose-50 uppercase">
                 ganhar um bônus completo
               </span>{" "}
               de corte molhado em cabelos crespos, passo a passo com a{" "}
-              <span className="text-amber-500 uppercase">
+              <span className="text-rose-50 uppercase">
                 Método Alessandra Pavani.
               </span>
             </p>
             <p>Tornado suas fieis com o seu trabalho.</p>
             <p>
               Você vai aumentar o seu faturamento de
-              <span className="text-amber-500 uppercase">
+              <span className="text-rose-50 uppercase">
                 {" "}
                 2 a 3 mil reais mensal.{" "}
               </span>
